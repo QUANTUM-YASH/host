@@ -1,0 +1,14 @@
+[
+    {
+        "title": "STUDENTS MARKS ANALYSER",
+        "description": "This project made in python analyses the marks of students given by you and make a report based on that. ",
+        "image": "dataset-cover.jpg",
+        "link": "https://github.com/QUANTUM-YASH/STUDENT-MARKS-ANALYSER"
+    },
+    {
+        "title": "5-day WEATHER ANALYSER",
+        "description": "A simple Python program that analyzes temperatures of 5 days and provides useful insights like average, maximum, minimum, and range.\r\n\r\n",
+        "image": "tropical-storm-barry-hits-gulf-coast-1607145-5c12d4c446e0fb0001f47f6e.jpg",
+        "link": "https://github.com/QUANTUM-YASH/5-Day-WEATHER-ANALYSER"
+    }
+]

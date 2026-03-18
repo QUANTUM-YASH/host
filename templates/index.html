@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The QUANTUM Studio</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav>
+    <div class="logo">
+        <img src="{{ url_for('static', filename='logo.jpg') }}">
+        <span>The QUANTUM Studio</span>
+    </div>
+
+    <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+        <a href="/admin">Admin</a>
+    </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+    <h1>We Create Projects <span>Based on REAL LIFE</span></h1>
+    <p>Creative coding. Smart solutions. Real impact.</p>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="about">
+    <div class="about-container">
+        <div class="about-left">
+            <h2>About</h2>
+            <h3>The QUANTUM Studio</h3>
+        </div>
+
+        <div class="about-right">
+            <p>
+                We focus on building real-world solutions using programming, logic, and modern technologies.
+            </p>
+            <p>
+                Specializing in Python development, problem solving, and innovative project creation.
+            </p>
+            <p>
+                Our mission is to create impactful, practical, and scalable digital solutions.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="projects">
+    <h2>Projects</h2>
+
+    <div class="grid">
+        {% for project in projects %}
+        <div class="card">
+
+            <img src="{{ project.image }}" alt="project image">
+
+            <div class="card-content">
+                <h3>{{ project.title }}</h3>
+                <p>{{ project.description }}</p>
+
+                {% if project.link %}
+                <a href="{{ project.link }}" target="_blank" class="btn">
+                    View Project
+                </a>
+                {% endif %}
+            </div>
+
+        </div>
+        {% endfor %}
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="contact">
+    <h2>Contact</h2>
+
+    <div class="contact-box">
+        <p>Reach out for collaboration or queries.</p>
+
+        <a href="mailto:thequantumstudio1905@gmail.com">
+            thequantumstudio1905@gmail.com
+        </a>
+
+        <a href="https://github.com/QUANTUM-YASH" target="_blank">
+            github.com/QUANTUM-YASH
+        </a>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    © 2026 The QUANTUM Studio
+</footer>
+
+</body>
+</html>

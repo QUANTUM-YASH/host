@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin Panel - QUANTUM Studio</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<section class="admin">
+    <h2>Add New Project</h2>
+
+    <form method="POST" enctype="multipart/form-data" class="admin-form">
+        
+        <input type="text" name="title" placeholder="Project Title" required>
+
+        <textarea name="description" placeholder="Project Description" required></textarea>
+
+        <input type="text" name="link" placeholder="Project Link">
+
+        <input type="file" name="image">
+
+        <button type="submit">Upload Project</button>
+
+    </form>
+</section>
+
+</body>
+</html>
