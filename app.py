@@ -23,8 +23,7 @@ cloudinary.config(
 
 # ------------------ PASSWORD SETUP ------------------
 # Automatically hash your real password
-REAL_PASSWORD = "#yash19-portfolio@"
-HASHED_PASSWORD = hashlib.sha256(REAL_PASSWORD.encode()).hexdigest()
+HASHED_PASSWORD = hashlib.sha256("#yash19-portfolio@".encode()).hexdigest()
 
 def check_password(password):
     return hashlib.sha256(password.encode()).hexdigest() == HASHED_PASSWORD
